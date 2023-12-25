@@ -1,3 +1,17 @@
 .container {
-  margin-top: 60px;
+  margin-top: 50px;
+}
+.h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.btn-outline-info:focus {
+  box-shadow: none;
+}
+.btn:focus {
+  box-shadow: none;
+}
+.btn-primary:active:focus,
+.btn-outline-info:active:focus {
+  box-shadow: none;
 }

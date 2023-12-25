@@ -1,0 +1,46 @@
+.main {
+  height: 50vh;
+}
+.hover-effect1 {
+  min-height: 20px;
+  text-align: center;
+}
+.hover-effect1 ul {
+  padding-top: 1px;
+}
+.hover-effect1 ul li {
+  display: inline-block;
+}
+.hover-effect1 ul li a {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  margin: 0px 10px;
+  line-height: 40px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgb(54, 191, 255);
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.hover-effect1 ul li:hover a {
+  border-radius: 50%;
+  background: rgb(54, 191, 255);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.footer-link {
+  color: rgb(26, 26, 25);
+  font-weight: 400;
+}
+.footer-link:hover {
+  text-decoration: underline;
+  color: rgb(197, 3, 181);
+}

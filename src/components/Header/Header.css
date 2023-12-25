@@ -5,7 +5,10 @@
   width: 120px;
 }
 .navbar-toggler {
-  color: rebeccapurple;
+  color: rgb(54, 191, 255);
+}
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 .nav-item {
   color: rgb(143, 143, 143);
@@ -13,14 +16,11 @@
   font-weight: 600;
 }
 .nav-item:hover {
-  color: rgb(247, 6, 255);
+  color: #fff;
+  background-color: rgb(54, 191, 255);
+  border-radius: 5px;
 }
 .login {
-  background-color: #0d6efd;
-  color: #fff;
   font-weight: 600;
-}
-.login:hover {
-  color: #fff;
-  background-color: rgb(255, 166, 0);
+  color: rgb(143, 143, 143);
 }

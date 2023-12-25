@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { ReactComponent as MenuIcon } from "../../assets/align-center.svg";
 
 const Header = () => {
   return (
@@ -22,7 +23,8 @@ const Header = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            {/* <span className="navbar-toggler-icon"></span> */}
+            <MenuIcon />
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav mx-lg-auto">
@@ -49,7 +51,10 @@ const Header = () => {
               </a>
             </div>
             <div className="d-flex align-items-lg-center mt-3 mt-lg-0">
-              <a href="#" className="btn btn-sm w-full w-lg-auto login">
+              <a
+                href="#"
+                className="btn btn-outline-primary w-full w-lg-auto login"
+              >
                 LOGIN
               </a>
             </div>
