@@ -59,13 +59,13 @@ const Footer = () => {
               />
               <p>
                 <i class="fa fa-home mx-2" aria-hidden="true"></i>
-                No 51, 2nd Cross <br />
+                No 70, 3rd Cross <br />
                 Thendral Nagar, New Saram,
                 <br /> Puducherry 605013
               </p>
               <p>
                 <i class="fa fa-envelope mx-2"></i>
-                jayasreekrishnamurthy60@gamail.com
+                jayasreekrishnamurthy60@gmail.com
               </p>
               <p>
                 <i class="fa fa-phone mx-2" aria-hidden="true"></i> + 91 97891
