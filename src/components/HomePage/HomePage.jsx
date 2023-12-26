@@ -75,6 +75,49 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      <section className="about-section">
+        <div className="row">
+          <div className="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+            <div className="inner-column">
+              <div className="sec-title">
+                <span className="title">About Us</span>
+                <h2>
+                  Empowering Your Journeys: Seamless Car Rentals with Jayasree
+                  travels
+                </h2>
+              </div>
+              <div className="text">
+                Welcome to Jayasree travels, where convenience meets adventure.
+                We pride ourselves on offering a seamless and user-friendly
+                platform for all your car rental needs. With an extensive fleet
+                catering to diverse preferences, transparent pricing, and a
+                commitment to safety, we strive to redefine your travel
+                experience. Join us on the road to hassle-free journeys -
+                because every mile should be memorable.
+              </div>
+              <div className="btn-box">
+                <a href="#" className="theme-btn btn-style-one">
+                  Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="image-column col-lg-6 col-md-12 col-sm-12">
+            <div className="inner-column wow fadeInLeft">
+              <div className="author-desc">
+                <h2>Explore More</h2>
+                <span>Jayasree travels</span>
+              </div>
+              <figure className="image-1">
+                <a href="#" className="lightbox-image" data-fancybox="images">
+                  <img src={require("../../assets/about_us.jpg")} alt="" />
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

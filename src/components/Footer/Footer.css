@@ -1,9 +1,9 @@
-.container-fluid {
+.footer-container {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 0%,
-    rgba(185, 233, 224, 1) 100%
+    rgb(195, 245, 236) 100%
   );
   margin-top: 150px;
 }
