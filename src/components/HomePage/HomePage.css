@@ -15,3 +15,34 @@
 .btn-outline-info:active:focus {
   box-shadow: none;
 }
+
+@keyframes move-in {
+  from {
+    transform: translate(0, -20px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+.car-title,
+.top-btns {
+  opacity: 0;
+  animation: move-in ease-in-out;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+.dashboard-img {
+  animation: 1s fadeInUp;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

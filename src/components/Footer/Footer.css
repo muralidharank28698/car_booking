@@ -4,7 +4,20 @@
 .hover-effect1 {
   min-height: 20px;
   text-align: center;
+  animation: 1.5s fadeInUp;
 }
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 .hover-effect1 ul {
   padding-top: 1px;
 }
