@@ -24,3 +24,151 @@
   font-weight: 600;
   color: rgb(143, 143, 143);
 }
+
+/* Login popup styles */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.order__left {
+  order: 1;
+  padding: 20px;
+}
+.order__right {
+  order: 2;
+  /* background-color: rgb(55, 197, 204);
+  background-image: url("https://5.imimg.com/data5/EE/TY/GLADMIN-54082613/maruti-suzuki-dzire-car.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.no__overflow {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.form {
+  max-width: 500px;
+}
+.logo {
+  margin-bottom: 12px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 16px 0;
+  display: block;
+  border: 1px solid #c8c3cf;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #f6f5f7;
+  font-size: 16px;
+  color: #4f4659;
+  outline: none;
+  transition: box-shadow 0.25s ease-in-out, background-image 0.25s;
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #0dcaf0;
+}
+::-webkit-input-placeholder {
+  color: #a29ca8;
+}
+:-ms-input-placeholder {
+  color: #a29ca8;
+}
+::placeholder {
+  color: #a29ca8;
+}
+.justify__space_between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0 26px 0;
+}
+input[type="checkbox"],
+label {
+  margin-right: 4px;
+  cursor: pointer;
+  outline-color: #b595d4;
+}
+.remember_me,
+.signup {
+  color: #867992;
+}
+.forgot__password {
+  color: #551a8b;
+  text-align: left;
+  outline-color: #b595d4;
+}
+.forgot__password:active {
+  color: #867992;
+}
+.login__button {
+  outline-color: #0dcaf0;
+  width: 100%;
+  border: none;
+  background-color: #0dcaf0;
+  padding: 8px 12px;
+  color: #fff;
+  border-radius: 0.25rem;
+  font-size: 16px;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease-in-out, background-color 0.3s;
+}
+.login__button:active {
+  background-color: #874dbf;
+}
+.signup {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 23px;
+}
+.img {
+  height: 100%;
+  /* object-fit: contain;
+  max-width: auto; */
+}
+.model {
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: auto;
+  }
+  .order__left {
+    order: 2;
+    padding: 20px;
+  }
+  .order__right {
+    order: 1;
+  }
+  .centered {
+    /* align-items: flex-start; */
+    display: block;
+  }
+  .no__overflow {
+    align-items: flex-start;
+  }
+  .img {
+    width: 100%;
+    height: 300px;
+  }
+  .model {
+    padding: 0 !important;
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .img {
+    width: 120%;
+  }
+}
