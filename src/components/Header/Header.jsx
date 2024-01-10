@@ -2,14 +2,21 @@ import React, { useState } from "react";
 import "./Header.css";
 import Modal from "react-bootstrap/Modal";
 import { ReactComponent as MenuIcon } from "../../assets/align-center.svg";
+import { Link } from "react-router-dom";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import Button from "react-bootstrap/Button";
 
 const Header = () => {
   const [show, setShow] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
-  const handleShow = () => setShow(true);
+  const handleClose = () => setToggle(false);
+  const handleShow = () => setToggle(true);
+
+  const handleLoginShow = () => setShow(true);
 
   return (
-    <div>
+    <>
       <nav className="navbar navbar-expand-lg px-0 py-1">
         <div className="container-xl">
           <a className="navbar-brand" href="/">
@@ -19,48 +26,96 @@ const Header = () => {
               className="logo_img"
             />
           </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <MenuIcon />
-          </button>
+          <>
+            <Button
+              // className="navbar-toggler"
+              className="navbar-toggler d-lg-none btn-primary hambagarBtn"
+              // type="button"
+              // data-bs-toggle="collapse"
+              // data-bs-target="#navbarCollapse"
+              // aria-controls="navbarCollapse"
+              // aria-expanded="false"
+              // aria-label="Toggle navigation"
+              onClick={handleShow}
+            >
+              <MenuIcon />
+            </Button>
+            <Offcanvas
+              show={toggle}
+              onHide={handleClose}
+              placement="end"
+              className="off-canvas"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title>
+                  <h1 className="heading">
+                    Jayasree<span>Travels</span>
+                  </h1>
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Link
+                  className="nav-item mb nav-link active"
+                  to="/"
+                  aria-current="page"
+                >
+                  HOME
+                </Link>
+                <Link className="nav-item mb nav-link" to="/cars">
+                  CARS
+                </Link>
+                <Link className="nav-item mb nav-link" to="/booking">
+                  BOOKING
+                </Link>
+                <Link className="nav-item mb nav-link" to="/aboutUs">
+                  ABOUT
+                </Link>
+                <div class="d-grid gap-2 my-3">
+                  <button
+                    class="btn btn-outline-info"
+                    type="button"
+                    onClick={handleLoginShow}
+                  >
+                    Log In
+                  </button>
+                  <button class="btn btn btn-info" type="button">
+                    Sign Up
+                  </button>
+                </div>
+              </Offcanvas.Body>
+            </Offcanvas>
+          </>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav mx-lg-auto">
-              <a
+              <Link
                 className="nav-item nav-link active"
-                href="#"
+                to="/"
                 aria-current="page"
               >
                 HOME
-              </a>
-              <a className="nav-item nav-link" href="#">
+              </Link>
+              <Link className="nav-item nav-link" to="/cars">
                 CARS
-              </a>
-              <a className="nav-item nav-link" href="#">
+              </Link>
+              <Link className="nav-item nav-link" to="/booking">
                 BOOKING
-              </a>
-              <a className="nav-item nav-link" href="#">
+              </Link>
+              <Link className="nav-item nav-link" to="/aboutUs">
                 ABOUT
-              </a>
+              </Link>
             </div>
             <div className="navbar-nav ms-lg-4">
-              <a className="nav-item nav-link" href="#">
+              <Link className="nav-item nav-link" href="#">
                 SIGN UP
-              </a>
+              </Link>
             </div>
             <div className="d-flex align-items-lg-center mt-3 mt-lg-0">
-              <a
+              <Link
                 className="btn btn-outline-primary w-full w-lg-auto login"
-                onClick={handleShow}
+                onClick={handleLoginShow}
               >
                 LOGIN
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -149,7 +204,7 @@ const Header = () => {
           </Modal.Body>
         </Modal>
       </>
-    </div>
+    </>
   );
 };
 

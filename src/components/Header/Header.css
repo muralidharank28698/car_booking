@@ -10,6 +10,47 @@
 .navbar-toggler:focus {
   box-shadow: none;
 }
+.hambagarBtn:focus,
+.hambagarBtn:hover,
+.hambagarBtn:active {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+  color: rgb(54, 191, 255);
+}
+.off-canvas {
+  border-left: none;
+  width: 300px;
+  /* margin-top: 90px; */
+}
+.mb {
+  margin-right: 0px !important;
+}
+.heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-indent: 20px;
+  margin: 8px 0;
+  position: relative;
+  color: #000;
+}
+.heading span {
+  color: #757575;
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  margin-top: 0.15px;
+}
+.heading:before {
+  content: "";
+  width: 5px;
+  display: inline-block;
+  position: absolute;
+  bottom: -5px;
+  top: 0;
+  left: 0px;
+  background: #0dcaf0;
+  border-color: #0dcaf0;
+}
 .nav-item {
   color: rgb(143, 143, 143);
   margin-right: 30px;
