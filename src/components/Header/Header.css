@@ -1,5 +1,5 @@
 .navbar {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 0px 0 rgba(136, 136, 136, 0.2);
 }
 .logo_img {
   width: 120px;
@@ -177,9 +177,6 @@ label {
   /* object-fit: contain;
   max-width: auto; */
 }
-.model {
-  margin-top: 80px;
-}
 
 @media only screen and (max-width: 800px) {
   .grid {
@@ -193,7 +190,6 @@ label {
     order: 1;
   }
   .centered {
-    /* align-items: flex-start; */
     display: block;
   }
   .no__overflow {
@@ -202,10 +198,6 @@ label {
   .img {
     width: 100%;
     height: 300px;
-  }
-  .model {
-    padding: 0 !important;
-    margin-top: 100px;
   }
 }
 @media only screen and (max-height: 600px) {

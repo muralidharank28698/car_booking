@@ -79,7 +79,9 @@ const Header = () => {
                     Log In
                   </button>
                   <button class="btn btn btn-info" type="button">
-                    Sign Up
+                    <Link to="/signUp" style={{ color: "#FFF" }}>
+                      Sign Up
+                    </Link>
                   </button>
                 </div>
               </Offcanvas.Body>
@@ -105,7 +107,7 @@ const Header = () => {
               </Link>
             </div>
             <div className="navbar-nav ms-lg-4">
-              <Link className="nav-item nav-link" href="#">
+              <Link className="nav-item nav-link" to="/signUp">
                 SIGN UP
               </Link>
             </div>
@@ -126,20 +128,19 @@ const Header = () => {
           onHide={() => setShow(false)}
           dialogClassName="modal-90w"
           size="lg"
-          className="model"
+          centered
         >
+          {/* <Modal.Header closeButton>
+            <Modal.Title id="example-custom-modal-styling-title">
+              Custom Modal Styling
+            </Modal.Title>
+          </Modal.Header> */}
           <Modal.Body style={{ padding: 0 }}>
             <div className="grid">
               <div className="order__left centered">
                 <div className="form">
                   <div className="logo">
                     <h4 style={{ color: "#0dcaf0" }}>Login</h4>
-                    {/* <img
-                      className="img"
-                      src={require("../../assets/Logo.png")}
-                      alt="picture"
-                      style={{ width: "100px" }}
-                    /> */}
                   </div>
                   <input
                     type="text"
@@ -183,7 +184,7 @@ const Header = () => {
                       Don't have an account?
                     </label>
                     <a
-                      href="#"
+                      href="/signUp"
                       className="forgot__password"
                       style={{ textDecoration: "none" }}
                     >
