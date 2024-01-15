@@ -81,7 +81,7 @@ const Footer = () => {
           </li>
           <li className="list-inline-item">
             <a
-              href="#"
+              href="/signUp"
               className="btn btn-outline-primary btn-rounded w-full w-lg-auto login"
             >
               Sign up!
@@ -92,22 +92,22 @@ const Footer = () => {
         <div className="hover-effect1">
           <ul className="list-unstyled list-inline text-center">
             <li className="list-inline-item">
-              <a href="https://www.facebook.com/codewithfaraz" title="Facebook">
+              <a href="#" title="Facebook">
                 <i className="fa fa-facebook"></i>
               </a>
             </li>
             <li className="list-inline-item">
-              <a href="https://www.twitter.com/codewithfaraz" title="Twitter">
+              <a href="#" title="Twitter">
                 <i className="fa fa-twitter"></i>
               </a>
             </li>
             <li className="list-inline-item">
-              <a href="https://www.youtube.com/@codewithfaraz" title="Youtube">
+              <a href="https://www.youtube.com/" title="Youtube" target="_blank">
                 <i className="fa fa-youtube"></i>
               </a>
             </li>
             <li className="list-inline-item">
-              <a href="#." title="Github">
+              <a href="https://github.com/muralidharank28698" title="Github" target="_blank">
                 <i className="fa fa-github"></i>
               </a>
             </li>
