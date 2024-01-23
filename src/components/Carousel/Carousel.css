@@ -1,0 +1,26 @@
+.carousel-item {
+  width: 100%;
+  /* height: 500px; */
+  position: relative;
+}
+.gradiant {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 245, 233, 0.71),
+    rgba(255, 255, 255, 0.007)
+  );
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.carousel-caption {
+  padding-bottom: 2.25rem;
+}

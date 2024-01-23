@@ -2,11 +2,13 @@ import React from "react";
 import "./HomePage.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import Carousel from "../Carousel/Carousel";
 
 const HomePage = () => {
   return (
     <div>
       <Header />
+      <Carousel />
       <div className="container">
         <figure className="text-center car-title">
           <p className="lead">Meet you new car</p>
@@ -20,13 +22,13 @@ const HomePage = () => {
             Book Now
           </button>
         </div>
-        <div className="text-center dashboard-img">
+        {/* <div className="text-center dashboard-img">
           <img
             src={require("../../assets/HomePageCar.png")}
             className="img-fluid"
             alt="Maruti Suzuki DZire"
           />
-        </div>
+        </div> */}
         <section className="pb-5 pt-5">
           <div className="container">
             <div className="row">
